@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abbas Raza | Full Stack Developer & Blockchain Enthusiast</title>
+  <meta name="description" content="Portfolio of Abbas Raza - Full Stack Developer specializing in React, Next.js, TypeScript, Laravel, and blockchain technologies. Explore innovative web solutions and Web3 projects." />
+  <meta property="og:title" content="Abbas Raza | Full Stack Developer & Blockchain Enthusiast" />
+  <meta property="og:description" content="Full Stack Developer specializing in React, Next.js, TypeScript, Laravel, and blockchain technologies." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>AR<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#faq" class="nav-link" data-section="faq">FAQs</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for opportunities
+          </div>
+          <p class="hero-greeting">Hi, I'm</p>
+          <h1 class="hero-name">Abbas Raza</h1>
+          <div class="hero-title-wrapper">
+            <span class="hero-title-prefix">Full Stack</span>
+            <span class="hero-title-typed" id="typed-text"></span>
+            <span class="cursor-blink">|</span>
+          </div>
+          <p class="hero-description">
+            I craft scalable web applications and immersive digital experiences — 
+            from high-performance SaaS platforms to cutting-edge Web3 solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" id="get-in-touch-btn">
+              <span>Get in Touch</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#projects" class="btn btn-outline" id="view-work-btn">
+              <span>View Work</span>
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-link" id="github-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" id="linkedin-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:hello@abbasraza.dev" class="social-link" id="email-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring avatar-ring-2"></div>
+            <div class="avatar-circle">
+              <div class="avatar-initials">AR</div>
+            </div>
+            <div class="floating-tag tag-1">
+              <span class="tag-icon">⚛️</span> React
+            </div>
+            <div class="floating-tag tag-2">
+              <span class="tag-icon">⛓️</span> Blockchain
+            </div>
+            <div class="floating-tag tag-3">
+              <span class="tag-icon">🚀</span> Next.js
+            </div>
+            <div class="floating-tag tag-4">
+              <span class="tag-icon">🔷</span> TypeScript
+            </div>
+          </div>
+          <div class="stat-cards">
+            <div class="stat-card" id="stat-projects">
+              <span class="stat-number">20+</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-card" id="stat-uptime">
+              <span class="stat-number">80%</span>
+              <span class="stat-label">Uptime Achieved</span>
+            </div>
+            <div class="stat-card" id="stat-speed">
+              <span class="stat-number">60%</span>
+              <span class="stat-label">Faster Deployments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Career</span>
+          <h2 class="section-title">My Journey</h2>
+          <p class="section-subtitle">Building products that make a difference</p>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item" id="exp-smartb">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-company-info">
+                  <div class="company-icon">SB</div>
+                  <div>
+                    <h3 class="timeline-company">SmartB Solutions</h3>
+                    <p class="timeline-role">Software Engineer</p>
+                  </div>
+                </div>
+                <span class="timeline-badge current">Current</span>
+              </div>
+              <div class="timeline-tech">
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Next.js</span>
+                <span class="tech-pill">TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="exp-hashtag">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-company-info">
+                  <div class="company-icon">HW</div>
+                  <div>
+                    <h3 class="timeline-company">Hashtag Web</h3>
+                    <p class="timeline-role">Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-achievements">
+                <li>Delivered 20+ diverse, high-impact projects including NFT Marketplaces, B2B/B2C Travel Platforms, SaaS solutions, and ERP systems</li>
+                <li>Built scalable full-stack applications using React.js, Node.js, Next.js, Laravel, achieving 80% uptime across production environments</li>
+                <li>Designed and implemented robust RESTful APIs with comprehensive testing using Postman</li>
+                <li>Applied blockchain expertise in Solidity and NFT development, implementing ERC721, ERC721A standards</li>
+                <li>Implemented CI/CD pipelines, reducing deployment time by 60%</li>
+                <li>Collaborated with cross-functional teams to exceed client expectations</li>
+              </ul>
+              <div class="timeline-tech">
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Laravel</span>
+                <span class="tech-pill">Solidity</span>
+                <span class="tech-pill">ERC721</span>
+                <span class="tech-pill">CI/CD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="exp-datalines">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-company-info">
+                  <div class="company-icon">DL</div>
+                  <div>
+                    <h3 class="timeline-company">DataLines</h3>
+                    <p class="timeline-role">Associate Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-achievements">
+                <li>Built responsive and visually engaging frontends for NFT-based projects</li>
+                <li>Integrated blockchain APIs with frontend applications</li>
+              </ul>
+              <div class="timeline-tech">
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Web3.js</span>
+                <span class="tech-pill">NFT APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" id="exp-billions">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-company-info">
+                  <div class="company-icon">BH</div>
+                  <div>
+                    <h3 class="timeline-company">Billions Health</h3>
+                    <p class="timeline-role">Associate Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="timeline-achievements">
+                <li>Developed secure data handling solutions implementing advanced hashing techniques</li>
+                <li>Created unique NFT metadata generation system ensuring data integrity</li>
+                <li>Developed neumorphic UI components using React for medical professionals</li>
+              </ul>
+              <div class="timeline-tech">
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Blockchain</span>
+                <span class="tech-pill">Neumorphic UI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Expertise</span>
+          <h2 class="section-title">My Skillset</h2>
+          <p class="section-subtitle">Technologies I work with every day</p>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-category" id="skill-languages">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">⚙️</div>
+              <h3>Languages & Frameworks</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">TypeScript</span>
+              <span class="skill-pill">PHP</span>
+              <span class="skill-pill">Solidity</span>
+              <span class="skill-pill">React.js</span>
+              <span class="skill-pill">Next.js</span>
+              <span class="skill-pill">Node.js</span>
+              <span class="skill-pill">Express.js</span>
+              <span class="skill-pill">Laravel</span>
+            </div>
+          </div>
+
+          <div class="skill-category" id="skill-ui">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">🎨</div>
+              <h3>UI & Animation Libraries</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Tailwind CSS</span>
+              <span class="skill-pill">GSAP</span>
+              <span class="skill-pill">Framer Motion</span>
+              <span class="skill-pill">Three.js</span>
+              <span class="skill-pill">shadcn/ui</span>
+              <span class="skill-pill">Material UI</span>
+              <span class="skill-pill">Chakra UI</span>
+            </div>
+          </div>
+
+          <div class="skill-category" id="skill-devops">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">☁️</div>
+              <h3>DevOps & Cloud</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">AWS</span>
+              <span class="skill-pill">GitHub Actions</span>
+              <span class="skill-pill">Vercel</span>
+              <span class="skill-pill">Linux</span>
+              <span class="skill-pill">Nginx</span>
+              <span class="skill-pill">CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skill-category" id="skill-blockchain">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">⛓️</div>
+              <h3>Blockchain</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Solidity</span>
+              <span class="skill-pill">Ethers.js</span>
+              <span class="skill-pill">Web3.js</span>
+              <span class="skill-pill">Hardhat</span>
+              <span class="skill-pill">ERC721 / ERC721A</span>
+              <span class="skill-pill">IPFS</span>
+              <span class="skill-pill">Smart Contracts</span>
+            </div>
+          </div>
+
+          <div class="skill-category" id="skill-databases">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">🗄️</div>
+              <h3>Databases</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">PostgreSQL</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">MongoDB</span>
+              <span class="skill-pill">Redis</span>
+              <span class="skill-pill">Firebase</span>
+              <span class="skill-pill">Supabase</span>
+            </div>
+          </div>
+
+          <div class="skill-category" id="skill-tools">
+            <div class="skill-category-header">
+              <div class="skill-category-icon">🛠️</div>
+              <h3>Tools & Platforms</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">Postman</span>
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Jira</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">Notion</span>
+              <span class="skill-pill">Slack</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Some of my notable work</p>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card" id="project-nft">
+            <div class="project-card-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">🎨</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View source">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">NFT Marketplace</h3>
+            <p class="project-description">
+              A full-featured NFT marketplace with minting, buying, selling capabilities. Implements ERC721A standard for gas-optimized batch minting and IPFS-based metadata storage.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">Solidity</span>
+              <span class="tech-tag">ERC721A</span>
+              <span class="tech-tag">IPFS</span>
+              <span class="tech-tag">Ethers.js</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-travel">
+            <div class="project-card-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">✈️</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View source">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">B2B/B2C Travel Platform</h3>
+            <p class="project-description">
+              A comprehensive travel booking platform supporting both business and consumer markets. Features real-time availability, payment processing, and a rich admin dashboard.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">Redis</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-saas">
+            <div class="project-card-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">☁️</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View source">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">SaaS Enterprise Dashboard</h3>
+            <p class="project-description">
+              A multi-tenant SaaS platform with role-based access control, analytics, and reporting. Designed for enterprise-scale operations with a focus on performance and security.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-erp">
+            <div class="project-card-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">🏭</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View source">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">ERP System</h3>
+            <p class="project-description">
+              End-to-end enterprise resource planning solution covering inventory, HR, finance, and supply chain modules. Built with real-time sync and comprehensive audit trails.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">AWS</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-medical">
+            <div class="project-card-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">🏥</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View source">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">Medical Data Platform</h3>
+            <p class="project-description">
+              Secure healthcare data management system with neumorphic UI design for medical professionals. Features advanced hashing, NFT-based data integrity, and HIPAA-compliant storage.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Blockchain</span>
+              <span class="tech-tag">Neumorphic UI</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">IPFS</span>
+            </div>
+          </article>
+
+          <article class="project-card" id="project-web3">
+            <div class="project-card-glow"></div>
+            <div class="project-header">
+              <div class="project-icon">🌐</div>
+              <div class="project-links">
+                <a href="#" class="project-link" aria-label="View source">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="#" class="project-link" aria-label="Live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-name">Web3 dApp Integration</h3>
+            <p class="project-description">
+              A decentralized application featuring wallet connectivity, on-chain data querying, and smart contract interaction. Supports MetaMask and WalletConnect for seamless UX.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Ethers.js</span>
+              <span class="tech-tag">Hardhat</span>
+              <span class="tech-tag">MetaMask</span>
+              <span class="tech-tag">Solidity</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Q&A</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Find answers to common questions</p>
+        </div>
+        <div class="faq-list">
+
+          <div class="faq-item" id="faq-1">
+            <button class="faq-question" aria-expanded="false">
+              <span>What types of projects do you specialize in?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>I specialize in full-stack web applications, NFT marketplaces, SaaS platforms, ERP systems, B2B/B2C travel platforms, and Web3 dApps. My expertise spans from elegant React frontends to robust Laravel/Node.js backends and blockchain smart contracts.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-2">
+            <button class="faq-question" aria-expanded="false">
+              <span>Do you work on blockchain and Web3 projects?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely! Blockchain and Web3 is one of my key areas. I've implemented ERC721, ERC721A standards for NFT projects, written Solidity smart contracts, worked with Hardhat, Ethers.js, and Web3.js, and integrated IPFS for decentralized storage.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-3">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are you available for freelance work?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! I'm open to freelance opportunities and collaborations. Feel free to reach out via the contact form below or directly at my email. I'm always excited to hear about new challenges and innovative ideas.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-4">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is your development process like?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>My process starts with understanding requirements through close collaboration with stakeholders. I then design an architecture, set up CI/CD pipelines early, develop iteratively with frequent demos, conduct thorough API testing with Postman, and ensure production-ready deployment with robust monitoring.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" id="faq-5">
+            <button class="faq-question" aria-expanded="false">
+              <span>What makes you different from other developers?</span>
+              <span class="faq-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div class="faq-answer">
+              <p>My unique combination of full-stack web expertise and deep blockchain knowledge lets me build both traditional and decentralized applications. I focus on scalable architecture, clean code, and measurable outcomes — like reducing deployment time by 60% and maintaining 80% uptime across production environments.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">Let's Talk</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Let's build something great together</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-form-wrapper">
+            <h3>Send a Message</h3>
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name">Full Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry" />
+              </div>
+              <div class="form-group">
+                <label for="contact-message">Message</label>
+                <textarea id="contact-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submit-contact">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+              <div class="form-success" id="form-success" role="alert" aria-live="polite">
+                ✅ Message sent! I'll get back to you soon.
+              </div>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h3>Or reach out directly</h3>
+            <div class="contact-items">
+              <a href="mailto:hello@abbasraza.dev" class="contact-item" id="contact-email-link">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">Email</span>
+                  <span class="contact-item-value">hello@abbasraza.dev</span>
+                </div>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener" class="contact-item" id="contact-github-link">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">GitHub</span>
+                  <span class="contact-item-value">github.com/abbasraza</span>
+                </div>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-item" id="contact-linkedin-link">
+                <div class="contact-item-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-item-label">LinkedIn</span>
+                  <span class="contact-item-value">linkedin.com/in/abbasraza</span>
+                </div>
+              </a>
+            </div>
+            <div class="availability-card">
+              <div class="availability-indicator">
+                <span class="avail-dot"></span>
+                <span>Currently Available</span>
+              </div>
+              <p>Open to full-time roles, freelance projects, and exciting collaborations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>AR<span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-copy">© 2024 Abbas Raza. Built with ♥ and lots of ☕</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
