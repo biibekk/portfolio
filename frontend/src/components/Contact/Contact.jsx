@@ -121,7 +121,6 @@ export default function Contact() {
     }
 
     setSending(true)
-    setCurrentStep('Initiating contact...')
     
     try {
       const response = await fetch('http://localhost:5001/api/contact', {
@@ -231,7 +230,7 @@ export default function Contact() {
               
               {sent && (
                 <div className="form-success" role="alert">
-                  Message sent! I'll get back to you soon.
+                  Message received! I'll get back to you soon.
                 </div>
               )}
             </form>

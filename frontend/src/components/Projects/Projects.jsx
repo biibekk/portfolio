@@ -4,26 +4,65 @@ import './Projects.css'
 
 const PROJECTS = [
   {
-    id: 'project-krishimitra',
-    icon: '🌱',
-    name: 'KrishiMitra - Smart Farming Assistant',
-    description:
-      'An AI-powered decision support system providing personalized crop recommendations using real-time soil data, weather forecasts, and market trends. Integrates satellite data, IoT, and ML models for yield insights.',
-    tech: ['React.js', 'Node.js', 'Python', 'ML', 'Satellite APIs', 'MongoDB'],
-    github: 'https://github.com/Shiv-rm/KrishiMitra',
-    live: '#',
-  },
-  {
     id: 'project-movenleap',
     icon: '🚀',
-    name: 'MovenLeap – Lead Capture & Automation Platform',
-    description:
-      'A full-stack lead management platform designed to capture and streamline client enquiries efficiently. Implements REST APIs, form validation, and cloud-based data storage with Google Sheets integration.',
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs', 'Google Sheets API', 'Render'],
+    name: 'Move n Leap | Freelance Full-Stack Developer',
+    description: 'A performance-driven platform designed to streamline student enquiries and automate business communications.',
+    points: [
+      'Developed and deployed a mobile-first landing page using React, improving accessibility and user engagement.',
+      'Built RESTful APIs with Node.js and Express, integrated MongoDB Atlas, and implemented email automation using Resend API.',
+      'Generated 30–50 qualified enquiries from 50–100 visits, contributing to increased student enrollments.',
+    ],
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB Atlas', 'Resend API'],
     github: '#',
     live: '#',
   },
   {
+    id: 'project-krishimitra',
+    icon: '🌱',
+    name: 'KrishiMitra: Smart Farming Assistant',
+    description: 'An AI-powered decision support system providing personalized crop recommendations and real-time agricultural diagnostics.',
+    points: [
+      'Developed an agriculture engine using XGBoost to recommend optimal crops with 98% accuracy, integrating automated soil and climate data fetching via Nasa Power and ISRIC APIs.',
+      'Engineered a crop diagnostic system utilizing MobileNet-based models for disease prediction (94% accuracy) and pest detection (90% accuracy) from user-uploaded images.',
+      'Integrated LLMs (Groq/Gemini) to provide agricultural advisory, personalized growth roadmaps, and real-time market trend analysis.',
+      'Implemented a full-stack architecture featuring a multilingual interface, OTP-based authentication, and a farm ledger for financial management.',
+    ],
+    tech: ['Node.js', 'XGBoost', 'TensorFlow', 'PostgreSQL', 'Gemini AI', 'Vite'],
+    github: 'https://github.com/Shiv-rm/KrishiMitra',
+    live: '#',
+  },
+  {
+    id: 'project-atc-simulation',
+    icon: '✈️',
+    name: 'Air Traffic Controller Simulation',
+    description: 'A robust simulation for managing complex airport operations and flight scheduling using advanced data structures.',
+    points: [
+      'Designed and implemented an air traffic control simulation using C++ and object-oriented programming to manage flights, runways, and gates with optimized scheduling.',
+      'Implemented smart flight scheduling using a priority queue combined with greedy strategies and the Earliest Deadline First algorithm.',
+      'Optimized inter-airport routing by applying the Floyd–Warshall algorithm to compute shortest paths.',
+      'Integrated airport network data, flight details, and schedules using efficient file handling techniques.',
+    ],
+    tech: ['C++', 'Data Structures', 'Algorithms', 'Floyd–Warshall', 'Priority Queue'],
+    github: '#',
+    live: '#',
+  },
+  {
+    id: 'project-rainfall-prediction',
+    icon: '🌧️',
+    name: 'Rainfall Prediction in Delhi NCR',
+    description: 'A machine learning pipeline for accurate weather forecasting and rainfall classification using historical data.',
+    points: [
+      'Developed a machine learning pipeline to classify rain occurrence and predict rainfall amount using historical Delhi NCR weather data.',
+      'Performed data preprocessing, feature engineering, and exploratory data analysis to enhance data quality and model reliability.',
+      'Trained and evaluated classification and regression models including Logistic Regression, Random Forest Classifier, and Random Forest Regressor.',
+      'Compared model performance using metrics such as accuracy, precision, recall, RMSE, and R2.',
+    ],
+    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Matplotlib', 'ML'],
+    github: '#',
+    live: '#',
+  },
+    {
     id: 'project-network-modeling',
     icon: '🌐',
     name: 'Computer Networks Modeling & Analysis',
@@ -65,19 +104,26 @@ export default function Projects() {
           {PROJECTS.map((proj) => (
             <article className="project-card reveal" key={proj.id} id={proj.id}>
               <div className="project-card-glow" />
-              <div className="project-header">
-                {/* <div className="project-icon">{proj.icon}</div> */}
+              <div className="project-title-row">
+                <h3 className="project-name">{proj.name}</h3>
                 <div className="project-links">
                   <a href={proj.github} className="project-link" aria-label="View source">
                     <GithubIcon />
                   </a>
                   <a href={proj.live} className="project-link" aria-label="Live demo">
                     <ExternalIcon />
+                    {/* Live Demo */}
                   </a>
                 </div>
               </div>
-              <h3 className="project-name">{proj.name}</h3>
               <p className="project-description">{proj.description}</p>
+              {proj.points && (
+                <ul className="project-points">
+                  {proj.points.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              )}
               <div className="project-tech">
                 {proj.tech.map((t) => (
                   <span className="tech-tag" key={t}>{t}</span>

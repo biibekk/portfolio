@@ -1,7 +1,3 @@
-/* ============================================================
-   Abbas Raza Portfolio — script.js
-   ============================================================ */
-
 /* ─── Typed Text Effect ─────────────────────────────────────── */
 (function initTyped() {
   const words = ['Developer', 'Blockchain Dev', 'Web3 Engineer', 'Problem Solver'];

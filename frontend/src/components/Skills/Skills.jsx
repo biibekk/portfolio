@@ -6,14 +6,14 @@ const SKILL_CATEGORIES = [
   {
     id: 'skill-languages',
     icon: '⚙️',
-    title: 'Languages & Frameworks',
-    skills: ['JavaScript', 'PHP', 'React.js', 'Next.js', 'Node.js', 'Express.js'],
+    title: 'Languages',
+    skills: ['C++', 'Python', 'JavaScript', 'C'],
   },
   {
     id: 'skill-ui',
     icon: '🎨',
-    title: 'UI & Animation Libraries',
-    skills: ['Tailwind CSS', 'Framer Motion'],
+    title: 'Frameworks',
+    skills: ['React.js', 'Node.js', 'Express.js'],
   },
   {
     id: 'skill-databases',
@@ -25,13 +25,13 @@ const SKILL_CATEGORIES = [
     id: 'skill-ml',
     icon: '🤖',
     title: 'Data Science & ML',
-    skills: ['Machine Learning', 'Python', 'Scikit-Learn'],
+    skills: ['TensorFlow', 'Scikit-Learn', 'NumPy', 'Pandas'],
   },
   {
     id: 'skill-tools',
     icon: '🛠️',
-    title: 'Tools & Platforms',
-    skills: ['Git', 'Postman', 'Figma', 'VS Code'],
+    title: 'Developer Tools',
+    skills: ['Git', 'GitHub', 'Postman', 'Figma'],
   },
 ]
 

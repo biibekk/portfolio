@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import './Hero.css'
 
 const TYPED_WORDS = [
-  'Software Developer',
-  'Web3 Engineer',
+  'Software Engineer',
+  'Web Developer',
   'Problem Solver',
   'ML Engineer',
 ]
@@ -142,8 +142,8 @@ export default function Hero() {
           </div>
 
           <p className="hero-description">
-            I craft scalable web applications and immersive digital experiences —
-            from high-performance SaaS platforms to cutting-edge Web3 solutions.
+            I craft scalable web applications and software systems —
+            from high-performance SaaS platforms to cutting-edge Web solutions.
           </p>
 
           <div className="hero-actions">

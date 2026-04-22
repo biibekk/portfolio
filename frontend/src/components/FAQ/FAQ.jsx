@@ -10,27 +10,21 @@ const FAQS = [
   },
   {
     id: 'faq-2',
-    question: 'Do you work on blockchain and Web3 projects?',
-    answer:
-      "Absolutely! Blockchain and Web3 is one of my key areas. I've implemented ERC721, ERC721A standards for NFT projects, written Solidity smart contracts, worked with Hardhat, Ethers.js, and Web3.js, and integrated IPFS for decentralized storage.",
-  },
-  {
-    id: 'faq-3',
     question: 'Are you available for freelance work?',
     answer:
       "Yes! I'm open to freelance opportunities and collaborations. Feel free to reach out via the contact form below or directly at my email. I'm always excited to hear about new challenges and innovative ideas.",
   },
   {
-    id: 'faq-4',
+    id: 'faq-3',
     question: 'What is your development process like?',
     answer:
       'My process starts with understanding requirements through close collaboration with stakeholders. I then design an architecture, set up CI/CD pipelines early, develop iteratively with frequent demos, conduct thorough API testing with Postman, and ensure production-ready deployment with robust monitoring.',
   },
   {
-    id: 'faq-5',
+    id: 'faq-4',
     question: 'What makes you different from other developers?',
     answer:
-      'My unique combination of full-stack web expertise and deep blockchain knowledge lets me build both traditional and decentralized applications. I focus on scalable architecture, clean code, and measurable outcomes — like reducing deployment time by 60% and maintaining 80% uptime across production environments.',
+      'My unique combination of full-stack web expertise and machine learning knowledge lets me build both traditional and decentralized applications. I focus on scalable architecture, clean code, and measurable outcomes — like reducing deployment time by 60% and maintaining 80% uptime across production environments.',
   },
 ]
 

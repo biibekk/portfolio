@@ -45,8 +45,6 @@ app.post('/api/contact', async (req, res) => {
 
     // 2. Dummy work process steps for frontend feedback
     const steps = [
-      { message: "Validating your message...", delay: 500 },
-      { message: "Connecting to Resend mail servers...", delay: 800 },
       { message: "Delivering message to Bibek's inbox...", delay: 1200 },
       { message: "Success! Your message has been sent.", delay: 300 }
     ];

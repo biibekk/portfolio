@@ -31,8 +31,8 @@ const EDUCATION = [
   {
     id: 'edu-ssc',
     institution: 'The Millennium School, Noida - X',
-    degree: 'Class 10 (SSC)',
-    duration: '2019 — 2021',
+    degree: 'Grade 10 (SSC)',
+    duration: '2020 — 2021',
     score: '98.2%',
     details: [
       'Completed Secondary Education with distinction',

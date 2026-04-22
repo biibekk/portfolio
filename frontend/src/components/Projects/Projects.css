@@ -5,8 +5,10 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .project-card {
@@ -32,11 +34,11 @@
   pointer-events: none;
 }
 
-.project-header {
+.project-title-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 .project-icon { font-size: 2rem; }
 .project-links { display: flex; gap: 0.5rem; }
@@ -60,13 +62,33 @@
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--clr-text);
-  margin-bottom: 0.625rem;
+  margin-bottom: 0;
 }
 .project-description {
   font-size: 0.875rem;
   color: var(--clr-text-muted);
   line-height: 1.7;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
+}
+.project-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+.project-points li {
+  font-size: 0.875rem;
+  color: var(--clr-text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.25rem;
+}
+.project-points li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--clr-primary);
+  font-weight: bold;
 }
 
 .project-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; }
@@ -81,5 +103,8 @@
   color: var(--clr-accent-2);
 }
 
-@media (max-width: 1024px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 768px)  { .projects-grid { grid-template-columns: 1fr; } }
+@media (max-width: 768px)  { 
+  .projects-grid { 
+    gap: 1.5rem;
+  } 
+}
