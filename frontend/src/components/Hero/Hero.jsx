@@ -2,14 +2,14 @@ import { useEffect, useRef, useState } from 'react'
 import './Hero.css'
 
 const TYPED_WORDS = [
-  'Software Engineer',
-  'Web Developer',
+  'Software Developer',
+  'MERN Stack Developer',
   'Problem Solver',
   'ML Engineer',
 ]
 
 const STATS = [
-  { id: 'stat-projects', number: 20, suffix: '+', label: 'Projects Delivered' },
+  { id: 'stat-projects', number: 10, suffix: '+', label: 'Projects Delivered' },
   { id: 'stat-uptime',   number: 80, suffix: '%', label: 'Uptime Achieved'    },
   { id: 'stat-speed',    number: 60, suffix: '%', label: 'Faster Deployments' },
 ]
@@ -143,7 +143,7 @@ export default function Hero() {
 
           <p className="hero-description">
             I craft scalable web applications and software systems —
-            from high-performance SaaS platforms to cutting-edge Web solutions.
+            bridging the gap between robust full-stack architecture and cutting-edge ML solutions.
           </p>
 
           <div className="hero-actions">
