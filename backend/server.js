@@ -10,6 +10,10 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 app.use(cors());
 app.use(express.json());
 
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.post('/api/contact', async (req, res) => {
   const { name, email, subject, message } = req.body;
   
