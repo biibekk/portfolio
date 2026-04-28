@@ -3,7 +3,7 @@ import './Navbar.css'
 
 const NAV_LINKS = [
   { label: 'Home',       href: '#home' },
-  // { label: 'Experience', href: '#experience' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Education',  href: '#education' },
   { label: 'Skills',     href: '#skills' },
   { label: 'Projects',   href: '#projects' },

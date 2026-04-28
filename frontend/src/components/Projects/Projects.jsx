@@ -6,14 +6,14 @@ const PROJECTS = [
   {
     id: 'project-movenleap',
     icon: '🚀',
-    name: 'Move N Leap | Freelance Full-Stack Developer',
+    name: 'Move N Leap',
     description: 'A performance-driven platform designed to streamline student enquiries and automate business communications.',
     points: [
       'Developed and deployed a mobile-first landing page using React, improving accessibility and user engagement.',
       'Built RESTful APIs with Node.js and Express, integrated MongoDB Atlas, and implemented email automation using Resend API.',
       'Generated 30–50 qualified enquiries from 50–100 visits, contributing to increased student enrollments.',
     ],
-    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB Atlas', 'Resend API'],
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Resend API'],
     live: 'https://move-n-leap-frontend.onrender.com',
   },
   {
@@ -64,7 +64,7 @@ const PROJECTS = [
     icon: '🌐',
     name: 'Computer Networks Modeling & Analysis',
     description:
-      'An interactive platform for simulating and analyzing computer network structures. Visualizes network topologies, routing paths, and performance metrics using graph-based models.',
+      'An interactive dashboard for visualizing and analyzing data center network topologies like Leaf-Spine, Fat-Tree, and Three-Tier. Features real-time graph rendering, performance metric calculation, and targeted failure simulations to evaluate network resilience.',
     tech: ['React.js', 'Node.js', 'Cytoscape.js', 'Graph Theory', 'Graph Algorithms', 'REST APIs'],
     github: 'https://github.com/biibekk/Modelling-Analysis-Computer-Network-Topologies',
     live: 'https://modelling-analysis-computer-network.onrender.com',

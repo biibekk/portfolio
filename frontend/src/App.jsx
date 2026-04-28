@@ -15,7 +15,7 @@ function App() {
       <Navbar />
       <main id="main-content">
         <Hero />
-        {/* <Experience /> */}
+        <Experience />
         <Education />
         <Skills />
         <Projects />

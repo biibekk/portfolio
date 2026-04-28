@@ -4,54 +4,17 @@ import './Experience.css'
 
 const EXPERIENCES = [
   {
-    id: 'exp-smartb',
-    company: 'SmartB Solutions',
-    role: 'Software Engineer',
-    initials: 'SB',
-    current: true,
-    achievements: [],
-    tech: ['React.js', 'Node.js', 'Next.js', 'TypeScript'],
-  },
-  {
-    id: 'exp-hashtag',
-    company: 'Hashtag Web',
-    role: 'Software Engineer',
-    initials: 'HW',
+    id: 'exp-movenleap',
+    company: 'Move N Leap',
+    role: 'Freelance Web Developer',
+    initials: 'ML',
     current: false,
     achievements: [
-      'Delivered 20+ diverse, high-impact projects including NFT Marketplaces, B2B/B2C Travel Platforms, SaaS solutions, and ERP systems',
-      'Built scalable full-stack applications using React.js, Node.js, Next.js, Laravel, achieving 80% uptime across production environments',
-      'Designed and implemented robust RESTful APIs with comprehensive testing using Postman',
-      'Applied blockchain expertise in Solidity and NFT development, implementing ERC721, ERC721A standards',
-      'Implemented CI/CD pipelines, reducing deployment time by 60%',
-      'Collaborated with cross-functional teams to exceed client expectations',
+      'Developed and deployed a mobile-first landing page using React, improving accessibility and user engagement',
+      'Built RESTful APIs with Node.js and Express, integrated MongoDB Atlas, and implemented email automation using Resend API',
+      'Generated 30–50 qualified enquiries from 50–100 visits, contributing to increased student enrollments',
     ],
-    tech: ['React.js', 'Laravel', 'Solidity', 'ERC721', 'CI/CD'],
-  },
-  {
-    id: 'exp-datalines',
-    company: 'DataLines',
-    role: 'Associate Software Engineer',
-    initials: 'DL',
-    current: false,
-    achievements: [
-      'Built responsive and visually engaging frontends for NFT-based projects',
-      'Integrated blockchain APIs with frontend applications',
-    ],
-    tech: ['React.js', 'Web3.js', 'NFT APIs'],
-  },
-  {
-    id: 'exp-billions',
-    company: 'Billions Health',
-    role: 'Associate Software Engineer',
-    initials: 'BH',
-    current: false,
-    achievements: [
-      'Developed secure data handling solutions implementing advanced hashing techniques',
-      'Created unique NFT metadata generation system ensuring data integrity',
-      'Developed neumorphic UI components using React for medical professionals',
-    ],
-    tech: ['React.js', 'Blockchain', 'Neumorphic UI'],
+    tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Resend API'],
   },
 ]
 
