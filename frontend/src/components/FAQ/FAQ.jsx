@@ -6,7 +6,7 @@ const FAQS = [
     id: 'faq-1',
     question: 'What types of projects do you specialize in?',
     answer:
-      'I specialize in full-stack web applications, NFT marketplaces, SaaS platforms, ERP systems, B2B/B2C travel platforms, and Web3 dApps. My expertise spans from elegant React frontends to robust Laravel/Node.js backends and blockchain smart contracts.',
+      'I specialize in building full-stack applications and intelligent AI-driven systems. My expertise ranges from developing high-performance React frontends and Node.js backends to engineering complex machine learning pipelines and algorithmic simulations. I focus on creating scalable, data-centric solutions that solve real-world problems.',
   },
   {
     id: 'faq-2',
@@ -24,7 +24,8 @@ const FAQS = [
     id: 'faq-4',
     question: 'What makes you different from other developers?',
     answer:
-      'My unique combination of full-stack web expertise and machine learning knowledge lets me build both traditional and decentralized applications. I focus on scalable architecture, clean code, and measurable outcomes — like reducing deployment time by 60% and maintaining 80% uptime across production environments.',
+      'What makes me unique is my ability to seamlessly integrate  Machine Learning into production-ready full-stack architectures. I don’t just build interfaces; I engineer intelligent systems with measurable impact. I bridge the gap between complex algorithmic research and user-centric deployment.',
+      // 'What makes me unique is my ability to seamlessly integrate  Machine Learning into production-ready full-stack architectures. I don’t just build interfaces; I engineer intelligent systems with measurable impact—like achieving 98% accuracy in predictive models for agriculture or driving a 50 conversion rate in lead generation for business platforms. I bridge the gap between complex algorithmic research and user-centric deployment.',
   },
 ]
 

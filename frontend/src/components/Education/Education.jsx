@@ -10,9 +10,8 @@ const EDUCATION = [
     duration: '2022 — Present',
     score: 'CGPA: 8.4/10',
     details: [
-      'Specialized in Web Technologies and Data Structures',
-      'Relevant Coursework: DBMS, Operating Systems, Computer Networks, Software Engineering',
-      'Active member of the Coding Club and Open Source Community'
+      'Specialized in Web Technologies, Data Structures and Algorithms',
+      'Relevant Coursework: DBMS, Operating Systems, Computer Networks, Software Engineering, Machine Learning',
     ],
     initials: 'BT'
   },
@@ -23,8 +22,7 @@ const EDUCATION = [
     duration: '2021 — 2023',
     score: '96%',
     details: [
-      'Completed Higher Secondary Education with a focus on Mathematics and Science',
-      'Achieved distinction in Mathematics and Physics'
+      'Completed Higher Secondary Education with a focus on PCM and Information Practices',
     ],
     initials: 'HS'
   },
@@ -35,8 +33,8 @@ const EDUCATION = [
     duration: '2020 — 2021',
     score: '98.2%',
     details: [
-      'Completed Secondary Education with distinction',
-      'Awarded for academic excellence and extra-curricular participation'
+      // 'Completed Secondary Education with distinction',
+      // 'Awarded for academic excellence and extra-curricular participation'
     ],
     initials: 'SS'
   }

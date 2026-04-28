@@ -5,7 +5,7 @@ const TYPED_WORDS = [
   'Software Developer',
   'MERN Stack Developer',
   'Problem Solver',
-  'ML Engineer',
+  'Machine Learning Engineer',
 ]
 
 const STATS = [
@@ -136,7 +136,7 @@ export default function Hero() {
           <h1 className="hero-name">Bibek Shrestha</h1>
 
           <div className="hero-title-wrapper" aria-label={`Full Stack ${typedText}`}>
-            <span className="hero-title-prefix">Full Stack&nbsp;</span>
+            <span className="hero-title-prefix"></span>
             <span className="hero-title-typed">{typedText}</span>
             <span className="cursor-blink" aria-hidden="true">|</span>
           </div>
@@ -196,9 +196,9 @@ export default function Hero() {
             <div className="floating-tag tag-6"><span className="tag-icon"></span> DSA</div>
           </div>
 
-          <div className="stat-cards">
+          {/* <div className="stat-cards">
             {STATS.map((stat) => <StatCard key={stat.id} stat={stat} />)}
-          </div>
+          </div> */}
         </div>
       </div>
 

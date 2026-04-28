@@ -167,20 +167,20 @@
 
 .avatar-ring {
   position: absolute;
-  inset: -12px;
+  inset: -30px;
   border-radius: 50%;
   border: 1.5px solid rgba(139,92,246,0.2);
   animation: spin-ring 12s linear infinite;
 }
 .avatar-ring-2 {
-  inset: -28px;
+  inset: -75px;
   border-color: rgba(99,102,241,0.12);
   animation-duration: 20s;
   animation-direction: reverse;
 }
 
 .avatar-circle {
-  width: 220px; height: 220px;
+  width: 230px; height: 230px;
   border-radius: 50%;
   background: linear-gradient(135deg, rgba(139,92,246,0.25), rgba(99,102,241,0.15));
   border: 2px solid rgba(139,92,246,0.3);
@@ -219,11 +219,11 @@
 }
 .tag-icon { font-size: 1rem; }
 .tag-1 { top: 5%;  right: -20px; animation-delay: 0s; }
-.tag-2 { bottom: 15%; left: -30px; animation-delay: 1s; }
-.tag-3 { top: 55%; right: -35px; animation-delay: 2s; }
-.tag-4 { top: -4%; left: 16%;  animation-delay: 0.5s; }
-.tag-5 { bottom: -10px; right: 20px; animation-delay: 1.5s; }
-.tag-6 { top: 25%; right: 88%;  animation-delay: 0.5s; }
+.tag-2 { bottom: 15%; left: -48px; animation-delay: 1s; }
+.tag-3 { top: 55%; right: -77px; animation-delay: 2s; }
+.tag-4 { top: -11%; left: 16%;  animation-delay: 0.5s; }
+.tag-5 { bottom: -33px; right: 29px; animation-delay: 1.5s; }
+.tag-6 { top: 25%; right: 96%;  animation-delay: 0.5s; }
 
 .stat-cards {
   display: flex;

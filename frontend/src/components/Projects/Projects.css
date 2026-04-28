@@ -58,6 +58,14 @@
   background: rgba(139,92,246,0.1);
 }
 
+.project-link.live-icon {
+  width: auto;
+  padding: 0 0.75rem;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 .project-name {
   font-size: 1.125rem;
   font-weight: 700;
