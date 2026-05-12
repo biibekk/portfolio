@@ -5,7 +5,7 @@ const TYPED_WORDS = [
   'Software Developer',
   'MERN Stack Developer',
   'Problem Solver',
-  'Machine Learning Engineer',
+  'Machine Learning Enthusiast',
 ]
 
 const STATS = [
@@ -142,16 +142,15 @@ export default function Hero() {
           </div>
 
           <p className="hero-description">
-            I craft scalable web applications and software systems —
-            bridging the gap between robust full-stack architecture and cutting-edge ML solutions.
+            I craft scalable web applications and software systems — combining full-stack architecture with AI-driven solutions.
           </p>
 
           <div className="hero-actions">
             <a href="#contact" className="btn btn-primary" id="get-in-touch-btn">
               <span>Get in Touch</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              {/* <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
+              </svg> */}
             </a>
             <a href="#projects" className="btn btn-outline" id="view-work-btn">
               <span>View Work</span>

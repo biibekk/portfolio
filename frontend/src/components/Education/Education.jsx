@@ -7,7 +7,7 @@ const EDUCATION = [
     id: 'edu-btech',
     institution: 'Jaypee Institute of Information Technology, Noida',
     degree: 'Bachelor of Technology in Computer Science',
-    duration: '2022 — Present',
+    duration: '2023 — Present',
     score: 'CGPA: 8.4/10',
     details: [
       'Specialized in Web Technologies, Data Structures and Algorithms',

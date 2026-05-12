@@ -28,8 +28,8 @@ const PROJECTS = [
       'Implemented a full-stack architecture featuring a multilingual interface, OTP-based authentication, and a farm ledger for financial management.',
     ],
     tech: ['Node.js', 'XGBoost', 'TensorFlow', 'PostgreSQL', 'Gemini AI', 'Vite'],
-    github: 'https://github.com/Shiv-rm/KrishiMitra',
-    live: '#',
+    github: 'https://github.com/biibekk/KrishiMitra',
+    live: 'https://krishimitra-smart-farming-assistant.netlify.app',
   },
   {
     id: 'project-atc-simulation',
