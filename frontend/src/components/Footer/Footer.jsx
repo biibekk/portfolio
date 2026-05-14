@@ -86,7 +86,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p className="footer-copy">© {new Date().getFullYear()} Bibek Shrestha. All rights reserved.</p>
+          <p className="footer-copy">© {new Date().getFullYear()} Bibek Shrestha</p>
           <div className="footer-bottom-links">
             <a href="#home">Back to top</a>
           </div>
